@@ -2,10 +2,13 @@
 <html>
 <head>
 	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 	<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 	<title>Broken Singularity</title>
 </head>
 <body>
@@ -60,11 +63,23 @@
 	
 	<div id="games" class="content">
 		<h1><span class="title-arrow">►</span> Our Games</h1>
-		<div class="center">
-			<div class="main-preview-game">
-				<img src="images/NuclearFrost/NFPreview.jpg"/>
-				<a href="nuclearfrost.html">Nuclear Frost</a>
+		<div id="games-carousel" class="carousel slide center w-100" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#games-carousel" data-bs-slide-to="0" class="active"></button>
 			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="main-preview-game">			
+						<a href="nuclearfrost.html"><img class="d-block" src="images/NuclearFrost/NFPreview.jpg" alt="Nuclear Frost"/></a>
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" role="button" href="#games-carousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" role="button" href="#games-carousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon"></span>
+			</a>
 		</div>
 		<div class="content-separate"></div>
 	</div>
