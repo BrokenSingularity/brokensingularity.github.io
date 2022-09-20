@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'AUTHENTIC Sans';
+    src: url('AUTHENTICSans-90.eot');
+    src: url('AUTHENTICSans-90.eot?#iefix') format('embedded-opentype'),
+        url('AUTHENTICSans-90.woff2') format('woff2'),
+        url('AUTHENTICSans-90.woff') format('woff'),
+        url('AUTHENTICSans-90.ttf') format('truetype'),
+        url('AUTHENTICSans-90.svg#AUTHENTICSans-90') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

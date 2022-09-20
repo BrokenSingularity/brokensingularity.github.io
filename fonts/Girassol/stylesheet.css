@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Girassol';
+    src: url('Girassol-Regular.eot');
+    src: url('Girassol-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Girassol-Regular.woff2') format('woff2'),
+        url('Girassol-Regular.woff') format('woff'),
+        url('Girassol-Regular.ttf') format('truetype'),
+        url('Girassol-Regular.svg#Girassol-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

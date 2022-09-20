@@ -1,0 +1,220 @@
+@import url( '../fonts/fonts.css' );
+
+/**
+ * General
+ */
+
+body {
+	background-color: #100E11;
+	
+}
+
+a, p, h1, h3, ul, tr {
+	text-decoration: none;
+	color: #B3B3B3;
+	font-family: 'AUTHENTIC Sans'
+}
+
+ul {
+	margin-bottom: 2%;
+	margin-top: 2%;
+    margin-left: 4%;
+}
+
+ul li::before {
+  content: "\2022";
+  color: #ED6E13;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+h1, h3 {
+	font-family: 'Girassol';
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+a:hover {
+	color: #ED6E13;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: 'AUTHENTIC Sans';
+	width: 50%;
+}
+
+table thead {
+	font-weight: bold;
+	border-bottom: 2px dotted #333333;
+}
+
+table thead tr, table tbody tr {
+    text-align: left;
+}
+
+table th, table td {
+    padding: 6px 15px;
+}
+
+.center {
+	text-align: center;
+	margin: auto;
+}
+
+.spread-sides {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 15%;
+}
+
+/**
+ * Header
+ */
+
+#header {
+	width: 100%;
+	display: block;
+	padding: 10px 0 0 0;
+	font-size: 25px;
+	background-color: #000000;
+}
+
+#header a {
+	font-family: 'Girassol';
+}
+
+#header a:hover {
+	border-bottom: 2px solid #ED6E13;
+}
+
+.navigation-menu {
+}
+
+.navigation-menu a {
+	margin: 10px 20px 10px 0;
+}
+
+#header .branding a:hover {
+	border-bottom: none;
+}
+
+.branding a img {
+	height: 70px;
+}
+
+.site-header {
+	margin-top: 20px;
+}
+
+.site-header img {
+	max-width: 100%;
+	filter: drop-shadow( 0px 1px 6px #000000 );
+}
+
+/**
+ * Content
+ */
+ 
+#main {
+	margin: 0 15% 0 15%;
+	line-height: 1.851;
+	text-align: justify;
+}
+
+#main p {
+	margin-bottom: 2%;
+	font-size: 16px;
+}
+
+.highlightText {
+	color: #ED6E13;
+}
+
+.title-arrow {
+	color: #ED6E13;
+	font-weight: bold;
+	display: inline-block;
+	transition: transform .3s ease, margin .3s ease;
+	font-size: 18px;
+    margin-top: 0.115em;
+	vertical-align: middle;
+}
+
+.content {
+	margin: 2% 0 2% 0;
+	padding-bottom: 2px;
+}
+
+.content-separate {
+	border-bottom: 2px dotted #333333;
+}
+
+.content img {
+	margin: auto;
+}
+
+.main-preview-game {
+	padding-bottom: 2%;
+}
+
+.main-preview-game img {
+	filter: drop-shadow( -3px 1px 10px #000000 );
+}
+
+.main-preview-game a {
+	display: block;
+	font-family: 'Girassol';
+	font-size: 25px;
+	width: 20%;
+    margin: auto;
+}
+
+#tech-stack img {
+	width: auto;
+	height: 4em;
+	filter: drop-shadow( 0px 0px 3px #000000 );
+}
+
+#screenshots img {
+	width: auto;
+	height: 15em;
+	filter: drop-shadow( 0px 0px 3px #000000 );
+}
+
+.horizontal-panel {
+	display: flex;
+    justify-content: center;
+	margin: 1% 0 1% 0;
+}
+
+#screenshots .horizontal-panel {
+	margin-bottom: 3%;
+}
+
+.horizontal-panel div {
+	margin: 0 10% 0 10%;
+}
+
+/**
+ * Footer
+ */
+ 
+#footer {
+	width: 100%;
+	background-color: #000000;
+	text-align: center;
+	padding: 2% 0 2% 0;
+}
+
+.links img {
+	width: 35px;
+	height: 35px;
+}
