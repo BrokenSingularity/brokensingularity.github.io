@@ -6,7 +6,6 @@
 
 body {
 	background-color: #100E11;
-	
 }
 
 a, p, h1, h3, ul, tr {
@@ -82,9 +81,11 @@ table th, table td {
 #header {
 	width: 100%;
 	display: block;
-	padding: 10px 0 0 0;
 	font-size: 20px;
 	background-color: #000000;
+	top: 0;
+	z-index: 1000;
+	position: fixed;
 }
 
 #header a {
@@ -96,7 +97,9 @@ table th, table td {
 	border-bottom: 2px solid #ED6E13;
 }
 
-.navigation-menu {
+#header .spread-sides {
+	padding-top: 5px;
+	padding-bottom: 10px;
 }
 
 .navigation-menu a {
@@ -111,11 +114,7 @@ table th, table td {
 	height: 70px;
 }
 
-.site-header {
-	margin-top: 20px;
-}
-
-.site-header img {
+#site-header img {
 	max-width: 100%;
 	filter: drop-shadow( 0px 1px 6px #000000 );
 }
@@ -215,3 +214,33 @@ table th, table td {
 	width: 35px;
 	height: 35px;
 }
+
+/**
+ * Animations
+ */
+
+.anim-hide {
+	animation: anim-hide 0.5s linear forwards;
+}
+ 
+@keyframes anim-hide {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+ }
+
+.anim-show {
+	animation: anim-show 0.5s linear forwards;
+}
+
+@keyframes anim-show {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+ }
