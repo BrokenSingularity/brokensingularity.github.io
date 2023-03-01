@@ -199,6 +199,10 @@ table th, table td {
 	margin: 0 10% 0 10%;
 }
 
+#store {
+	margin: 2% 0 2% 0;
+}
+
 /**
  * Footer
  */
